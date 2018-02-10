@@ -1,0 +1,19 @@
+{
+  "name": "twitterdb",
+  "version": "1.0.0",
+  "description": "Analysis of Twitter Data with MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElDuderino420/twitterdb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElDuderino420/twitterdb/issues"
+  },
+  "homepage": "https://github.com/ElDuderino420/twitterdb#readme"
+}
