@@ -57,13 +57,10 @@ MongoClient.connect(url, (err, client) => {
     function twitterMentions(callback) {
         tweets.aggregate([
             { $group: { _id: "$user", mentions: { $sum: { $subtract: [{ $size: { $split: ["$text", "@"] } }, 1] } } } },
-            //{ $match: { text: {$regex: /@/}}},
-            //{ $group: { _id: "$user", mentions: { $match: { $count: {  } } } } },
             { $sort: { mentions: -1 } },
-            { $limit: 10 }
-        ]).toArray((err, mentions) => {
-            if (err) console.log(err)
-            else callback(mentions);
+            { $limit: 10 }]).toArray((err, mentions) => {
+                if (err) console.log(err)
+                else callback(mentions);
         });
     }
 
