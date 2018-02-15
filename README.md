@@ -7,8 +7,14 @@
 5. Who are the five most grumpy (most negative tweets) and the most happy (most positive tweets)? (Provide five users for each group)
 
 
+This is a Node.js Express Application, and needs Node.js and NPM installed to run. 
 
-Node.js Express Application
+To use run: 
+
+```bash
+npm install
+node index
+```
 
 API Endpoints:
 
